@@ -10,44 +10,54 @@ body{
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
-
 }
 .logo{
-  // padding: 40px 0;
-  // font:bold 24px/31px pt_serif,arial,helvetica,sans-serif;
-  width:190px;
-  height:35px;
-  background: url('img/logo.svg');
+  position: relative;
+  padding-left: 44px;
+  font:bold 24px/31px pt_serifbold;
+}
+.logo__circle{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+}
+.logo__circle_color_blue{
+  left: 8px;
+  top:56%;
+  background: #C8DBFB;
+  border-radius: 50%;
+  opacity: .7;
+}
+.logo__circle_color_dark-blue{
+  background:#0056EC;
+  border-radius: 50%;
+  opacity: .7;
 }
 .menu{
-display: flex;
-align-items: center;
-
+  display: flex;
+  align-items: center;
 }
 .menu__item{
   padding: 0 13px;
-
-
 }
 .menu__item:last-child{
   padding-right: 0;
 }
-
 .main-section{
-
 }
 .main-content{
-
 }
 .main-content__title{
-
+  font:bold 66px/87px pt_serifbold;
 }
 .main-content__description{
-
+  font:normal 22px/26px robotoregular;
 }
 .main-content__button{
-
+  font:normal 18px/21px robotoregular;
 }
 .image-content{
-
 }
