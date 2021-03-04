@@ -15,6 +15,7 @@ body{
   position: relative;
   padding-left: 44px;
   font:bold 24px/31px pt_serifbold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo__circle{
   position: absolute;
@@ -26,7 +27,7 @@ body{
 }
 .logo__circle_color_blue{
   left: 8px;
-  top:56%;
+  top:70%;
   background: #C8DBFB;
   border-radius: 50%;
   opacity: .7;
@@ -42,6 +43,7 @@ body{
 }
 .menu__item{
   padding: 0 13px;
+  font:500 18px/24px robotobold;
 }
 .menu__item:last-child{
   padding-right: 0;
