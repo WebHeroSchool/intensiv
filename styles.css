@@ -14,7 +14,7 @@ body{
 .logo{
   position: relative;
   padding-left: 44px;
-  font:bold 24px/31px pt_serifbold, arial, Helvatica, Sans-serif;
+  font:bold 24px/31px pt_serifbold;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo__circle{
@@ -42,24 +42,46 @@ body{
   align-items: center;
 }
 .menu__item{
-  padding: 0 13px;
-  font:500 18px/24px robotobold, arial, Helvatica, Sans-serif;
+  position: relative;
+  margin-right:26px;
+  font:500 18px/24px robotobold;
+  color:#000;
+  text-decoration: none;
+  transition: .5s;
+}
+.menu__item:hover{
+  opacity: .5;
+}
+.menu__item:after{
+  position: absolute;
+  display: block;
+  content:"";
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity .5s, width .5s;
+}
+.menu__item:hover:after,.menu__item_active:after{
+  opacity: 1;
+  width: 100%;
 }
 .menu__item:last-child{
-  padding-right: 0;
+  margin-right: 0;
 }
 .main-section{
 }
 .main-content{
 }
 .main-content__title{
-  font:bold 66px/87px pt_serifbold, arial, Helvatica, Sans-serif;
+  font:bold 66px/87px pt_serifbold;
 }
 .main-content__description{
-  font:normal 22px/26px robotoregular, arial, Helvatica, Sans-serif;
+  font:normal 22px/26px robotoregular;
 }
 .main-content__button{
-  font:normal 18px/21px robotoregular, arial, Helvatica, Sans-serif;
+  font:normal 18px/21px robotoregular;
 }
 .image-content{
 }
