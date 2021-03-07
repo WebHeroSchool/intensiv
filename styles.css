@@ -42,11 +42,33 @@ body{
   align-items: center;
 }
 .menu__item{
-  padding: 0 13px;
+  position: relative;
+  margin-right:26px;
   font:500 18px/24px robotobold, arial, Helvatica, Sans-serif;
+  color:#000;
+  text-decoration: none;
+  transition: .5s;
+}
+.menu__item:hover{
+  opacity: .5;
+}
+.menu__item:after{
+  position: absolute;
+  display: block;
+  content:"";
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity .5s, width .5s;
+}
+.menu__item:hover:after,.menu__item_active:after{
+  opacity: 1;
+  width: 100%;
 }
 .menu__item:last-child{
-  padding-right: 0;
+  margin-right: 0;
 }
 .main-section{
 }
