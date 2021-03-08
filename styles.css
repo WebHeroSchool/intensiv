@@ -10,24 +10,27 @@ body{
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 120px;
+
 }
 .logo{
   position: relative;
-  padding-left: 44px;
-  font:bold 24px/31px pt_serifbold, arial, Helvatica, Sans-serif;
+  padding-left: 75px;
+  padding-top: 10px;
+  font:bold 24px/23px pt_serifbold, arial, Helvatica, Sans-serif;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo__circle{
   position: absolute;
-  left: 0;
-  top: 50%;
+  left: 28px;
+  top: 80%;
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
 }
 .logo__circle_color_blue{
-  left: 8px;
-  top:70%;
+  left: 37px;
+  top:100%;
   background: #C8DBFB;
   border-radius: 50%;
   opacity: .7;
@@ -43,7 +46,7 @@ body{
 }
 .menu__item{
   position: relative;
-  margin-right:26px;
+  margin-right:30px;
   font:500 18px/24px robotobold, arial, Helvatica, Sans-serif;
   color:#000;
   text-decoration: none;
@@ -70,18 +73,33 @@ body{
 .menu__item:last-child{
   margin-right: 0;
 }
-.main-section{
-}
-.main-content{
-}
-.main-content__title{
+.main{
+  padding: 80px 65% 250px 0;
+  background: top right no-repeat url(img/Frame.svg);
+
+  }
+.main__title{
+  margin:0 0 40px 0;
   font:bold 66px/87px pt_serifbold, arial, Helvatica, Sans-serif;
 }
-.main-content__description{
+.main__title-text_highlight{
+  background: #ECF3FF;
+}
+.main__subtitle{
+  margin:-10px 100px 25px 0;
   font:normal 22px/26px robotoregular, arial, Helvatica, Sans-serif;
 }
-.main-content__button{
-  font:normal 18px/21px robotoregular, arial, Helvatica, Sans-serif;
+.main__button{
+  display: inline-block;
+  font:normal 19px/21px robotoregular, arial, Helvatica, Sans-serif;
+  color:#fff;
+  background: #0056EC;
+  padding: 20px 40px 15px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.main__button:hover{
+  opacity: .5;
 }
 .image-content{
 }
